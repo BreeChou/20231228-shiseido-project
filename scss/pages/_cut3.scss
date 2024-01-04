@@ -1,0 +1,284 @@
+// cut3
+.cut3 {
+  background-image: url(../img/bg-3.jpg);
+  height: 55.57vw;
+  @include mobile {
+    height: 81vw;
+    background-size: 151% auto;
+    background-position: 39.5% 69%;
+  }
+}
+
+.cut3 {
+  position: relative;
+
+  .pd-name {
+    position: absolute;
+    bottom: 18%;
+    left: 19%;
+    @include mobile {
+      transform: scale(1.5);
+      bottom: 14%;
+      left: 13%;
+    }
+    .color-w {
+      text-shadow: 0 0 1vw #ffffff;
+    }
+  }
+
+  .notion {
+    bottom: 5%;
+    right: 31.6%;
+    @include mobile {
+      bottom: 5%;
+      right: 24%;
+    }
+  }
+  .img {
+    position: absolute;
+    width: 12.66vw;
+    left: 20%;
+    top: 8%;
+    @include mobile {
+      width: 21vw;
+      top: 4%;
+      left: 10%;
+    }
+  }
+  .text {
+    position: absolute;
+    top: 10%;
+    left: 43.02%;
+    // background: #000;
+    width: 39.58%;
+    text-align: center;
+    color: #ffffff;
+    align-items: center;
+    @include mobile {
+      width: 53%;
+      left: 38%;
+      top: 7%;
+    }
+    .shine-position {
+      top: 8%;
+      left: -10%;
+      @include mobile {
+        top: -4%;
+        left: 8%;
+        transform: scaleY(-3);
+      }
+    }
+    .shine-position-2 {
+      top: 24%;
+      left: 32%;
+      @include mobile {
+        top: 27.6%;
+        left: 44%;
+      }
+    }
+    h2 {
+      letter-spacing: 0.2vw;
+      @include mobile {
+        letter-spacing: 0.4vw;
+      }
+    }
+    .catch-title {
+      font-size: 6.25vw;
+      letter-spacing: 0.5vw;
+      font-weight: 500;
+      position: relative;
+      @include mobile {
+        font-size: 9vw;
+      }
+      span {
+        font-size: 9.9vw;
+        font-style: italic;
+        margin-right: 1vw;
+        display: inline-block;
+        transform: translateY(10px);
+        @include mobile {
+          font-size: 15vw;
+          transform: translate(-6px, 5px);
+        }
+      }
+      sup {
+        position: absolute;
+        font-size: 1.5vw;
+        top: 33%;
+        right: 7%;
+      }
+    }
+    .user-feedback {
+      margin-top: 2.5vw;
+      text-align: left;
+      font-size: 1.46vw;
+      @include mobile {
+        transform: scale(1.7);
+        margin-top: 8vw;
+      }
+      small {
+        font-size: 1.25vw;
+      }
+      b {
+        // margin: 0 .5vw;
+        font-size: 2.5vw;
+      }
+      span {
+        margin: 0 1vw;
+      }
+      li {
+        &:nth-child(2) {
+          font-size: 1vw;
+          margin: 0 0.5vw;
+        }
+        p {
+          letter-spacing: 0.1vw;
+          line-height: 3vw;
+          width: auto;
+          height: 3vw;
+          // background: #de3f3f;
+          // border: #f6f2e6 solid 1px;
+        }
+      }
+    }
+    .data {
+      margin-top: 10%;
+
+      li {
+        background: #ff0707;
+
+        width: 12.24vw;
+        height: 12.24vw;
+      }
+    }
+  }
+  &.is-animate {
+    .digits {
+      animation-duration: 2s;
+      animation-timing-function: ease;
+      animation-fill-mode: forwards;
+    }
+
+    .digit1 {
+      animation-name: luckie-1;
+    }
+    .digit2 {
+      animation-name: luckie-2;
+    }
+    .digit4 {
+      animation-name: luckie-4;
+    }
+
+    /* Animations */
+    @keyframes luckie-1 {
+      100% {
+        margin-top: -43.4vw;
+      }
+    }
+    @keyframes luckie-2 {
+      100% {
+        margin-top: -38.6vw;
+      }
+    }
+    @keyframes luckie-4 {
+      100% {
+        margin-top: -24vw;
+      }
+    }
+  }
+}
+
+.group {
+  justify-content: space-between;
+  width: 38vw;
+  margin-top: 15%;
+  @include mobile {
+    margin-top: 23%;
+    transform: scale(1.35);
+  }
+  // background: #00a259;
+  .report-g {
+    // width: 12.5vw;
+    // margin: 0 auto;
+    // background-color: gray;
+    //
+    
+    .report {
+      .percent {
+        font-size: 4.9vw;
+        color: #c19e4c;
+      }
+      span {
+        margin-top: 60px;
+        font-size: 2.08vw;
+      }
+      p {
+        font-size: 1.46vw;
+      }
+    }
+  }
+  .report-bg-1 {
+    position: relative;
+    &::after {
+      content: "";
+      top: -3vw;
+      left: -2.5vw;
+      position: absolute;
+      width: 13.5vw;
+      height: 13.5vw;
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-image: url(../img/circle-1.png);
+    }
+  }
+  .report-bg-2 {
+    position: relative;
+    &::after {
+      content: "";
+      top: -3vw;
+      left: -2.5vw;
+      position: absolute;
+      width: 13.5vw;
+      height: 13.5vw;
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-image: url(../img/circle-2.png);
+    }
+  }
+  .report-bg-3 {
+    position: relative;
+    &::after {
+      content: "";
+      top: -3vw;
+      left: -2.5vw;
+      position: absolute;
+      width: 13.5vw;
+      height: 13.5vw;
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-image: url(../img/circle-3.png);
+    }
+  }
+}
+
+#counter {
+  height: 1em;
+  overflow: hidden;
+  .fz-30-2 {
+    text-align: left;
+  }
+}
+.percent {
+  transform: skewX(-10deg);
+  margin-bottom: 0.2vw;
+  sup {
+    font-size: 2.08vw;
+  }
+}
+.digits {
+  float: left;
+  list-style-type: none;
+  font-size: 4.84vw;
+  line-height: 4.84vw;
+}
+

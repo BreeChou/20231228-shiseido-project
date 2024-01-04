@@ -1,0 +1,424 @@
+@import url("https://fonts.googleapis.com/css?family=Noto+Sans+TC:400&display=swap");
+
+@font-face {
+  font-family: "ShiseidoGinzaExt";
+  src: url("../font/ShiseidoGinzaExt-Regular.woff2") format("woff2"),
+    url("../font/ShiseidoGinzaExt-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "ShiseidoGinza";
+  src: url("../font/ShiseidoGinza-Regular.woff2") format("woff2"),
+    url("../font/ShiseidoGinza-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+body {
+  overflow-x: hidden;
+  width: auto;
+  font-family: "shiseidoGinza", "woff2", "woff", "Noto Sans CJK TC",
+    "Microsoft JhengHei", PingFang, STHeiti, sans-serif, serif,
+    "Microsoft JhengHei UI", "微軟正黑體", "Microsoft JhengHei",
+    "Microsoft YaHei UI", "微軟雅黑", "Microsoft YaHei", sans-serif;
+  font-weight: normal;
+}
+.bg-set {
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+}
+.fz-93 {
+  font-size: 4.84vw;
+}
+.fz-64 {
+  font-size: 3.333vw;
+  @include mobile {
+    font-size: 9vw;
+  }
+}
+.fz-64-2 {
+  font-size: 3.333vw;
+  @include mobile {
+    font-size: 6vw;
+  }
+}
+.fz-56 {
+  font-size: 3.6vw;
+  @include mobile {
+    font-size: 8.8vw;
+  }
+}
+.fz-55 {
+  font-size: 2.86vw;
+}
+.fz-54 {
+  font-size: 2.8125vw;
+  @include mobile {
+    font-size: 7vw;
+  }
+}
+.fz-48 {
+  font-size: 2.5vw;
+}
+.fz-40 {
+  font-size: 2.08vw;
+  @include mobile {
+    font-size: 6vw;
+  }
+}
+.fz-40-1 {
+  font-size: 2.08vw;
+}
+.fz-32 {
+  font-size: 1.667vw;
+}
+.fz-36 {
+  font-size: 1.88vw;
+  @include mobile {
+    letter-spacing: 0.2vw;
+  }
+}
+.fz-24 {
+  font-size: 1.25vw;
+}
+.fz-28 {
+  font-size: 1.46vw;
+}
+.fz-30 {
+  font-size: 1.5vw;
+  @include mobile {
+    font-size: 4.5vw;
+  }
+}
+.fz-30-2 {
+  font-size: 1.5vw;
+}
+.fz-26 {
+  font-size: 1.35vw;
+}
+.fz-22 {
+  font-size: 1.15vw;
+}
+.fz-20 {
+  font-size: 1.04vw;
+}
+.d-f {
+  display: flex;
+}
+.d-f-c {
+  display: flex;
+  flex-direction: column;
+}
+.w-700 {
+  font-weight: 700;
+}
+.w-200 {
+  font-weight: 200;
+}
+.w-400 {
+  font-weight: 400;
+}
+.m-r-0 {
+  margin-right: 0.5vw;
+}
+.m-r-1 {
+  margin-right: 3vw;
+  @include mobile {
+    margin-right: 1.3vw;
+  }
+}
+.m-r-2 {
+  margin-right: 3vw;
+}
+.m-r-3 {
+  margin-right: 4.5vw;
+}
+.m-r-5 {
+  margin-right: 2vw;
+}
+
+.color-n {
+  color: #d6001c;
+}
+.color-b {
+  color: #192384;
+}
+.color-w {
+  color: #fff;
+}
+.color-bk {
+  color: #000;
+}
+.break-point-p {
+  display: block;
+  @include mobile {
+    display: none;
+  }
+}
+.break-point-s {
+  display: none;
+  @include mobile {
+    display: block;
+  }
+}
+
+// .btn {
+//   padding: 1vw 2.5vw;
+//   letter-spacing: 0.2vw;
+//   background-color: #192384;
+//   color: #ffffff;
+//   border: 3px solid transparent;
+//   border-image: linear-gradient(to right, #7079d0 60%, #f2d8aa 100%);
+//   border-image-slice: 1;
+//   -moz-box-shadow: 0px 10px 10px #d0c7b2; /* 老的 Firefox */
+//   box-shadow: 0px 5px 10px #d0c7b2;
+//   @include mobile {
+//     padding: 4vw 7vw;
+//     border-image-slice: 5;
+//   }
+//   span {
+//     margin-left: 1vw;
+//     display: inline-block;
+//     width: 1vw;
+//     height: 1vw;
+//     background-image: url(../img/arrow.png);
+//     background-repeat: no-repeat;
+//     background-size: contain;
+//     @include mobile {
+//       width: 3vw;
+//       height: 3vw;
+//       margin-left: 4.5vw;
+//     }
+//   }
+// }
+
+@keyframes lightSweep {
+  0% {
+    left: -100%;
+  }
+  50%,
+  100% {
+    left: 100%;
+  }
+}
+
+.btn {
+  padding: 1vw 2.5vw;
+  letter-spacing: 0.2vw;
+  display: inline-block;
+  background-color: #192384;
+  color: #ffffff;
+  border: 2px solid transparent;
+  border-image: linear-gradient(to right, #7079d0 60%, #f2d8aa 100%);
+  border-image-slice: 1;
+  -moz-box-shadow: 0px 10px 10px #d0c7b2; /* 老的 Firefox */
+  box-shadow: 0px 5px 10px #d0c7b2;
+  position: relative; // 設置相對位置，使掃光效果相對於按鈕進行定位
+  overflow: hidden;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+      to right,
+      rgba(255, 255, 255, 0) 0%,
+      rgba(255, 255, 255, 0) 8%,
+      white 49%,
+      rgba(255, 255, 255, 0) 93%,
+      rgba(255, 255, 255, 0) 100%
+    );
+    background-size: 200% 100%;
+    animation: lightSweep 2s ease infinite;
+    z-index: 1; // 控制掃光效果在按鈕上層顯示
+  }
+
+  @include mobile {
+    padding: 4vw 7vw;
+    border-image-slice: 5;
+  }
+
+  span {
+    margin-left: 1vw;
+    display: inline-block;
+    width: 1vw;
+    height: 1vw;
+    background-image: url(../img/arrow.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    @include mobile {
+      width: 3vw;
+      height: 3vw;
+      margin-left: 4.5vw;
+    }
+  }
+}
+
+// .button3 {
+//   width: 200px;
+//   height: 46px;
+//   line-height: 46px;
+//   background-color: #2e82ff;
+//   color: #ffffff;
+//   font-size: 18px;
+//   text-align: center;
+//   border-radius: 27px;
+//   position: relative;
+// }
+// .button3::before {
+//   content: "";
+//   position: absolute;
+//   left: 0px;
+//   width: 100%;
+//   height: 100%;
+//   background-image:
+//       linear-gradient(to right, rgba(255, 255, 255, 0) 30%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0) 70%);
+//   background-size: 200%;
+//   animation: wipes 1s infinite;
+// }
+// @keyframes wipes {
+//   0% {
+//       background-position: 0 0;
+//   }
+//   100% {
+//       background-position: 100% 0;
+//   }
+// }
+
+.notion {
+  position: absolute;
+  font-size: 0.9vw;
+  letter-spacing: 0.1vw;
+  @include mobile {
+    font-size: 2.3vw;
+  }
+}
+
+// component
+.shine {
+  display: inline-block;
+  position: absolute;
+  z-index: 1;
+  width: 27.8vw;
+  height: 5.26vw;
+  background-image: url(../img/shine.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.shine-1 {
+  display: inline-block;
+  position: absolute;
+  z-index: 1;
+  width: 5.66vw;
+  height: 32vw;
+  background-image: url(../img/shine-1.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  @include mobile {
+    width: 16.66vw;
+    height: 89vw;
+  }
+}
+.shine-animation-2 {
+  animation: shine_shine linear 2s infinite alternate;
+  animation-delay: 1s;
+}
+.shine-animation {
+  animation: shine_shine linear 2s infinite alternate;
+}
+@keyframes shine_shine {
+  0% {
+    transform: scale(0);
+    // opacity: 0;
+  }
+  50% {
+    transform: scale(1);
+    // opacity: 1;
+  }
+  100% {
+    transform: scale(0);
+    // opacity: 0;
+  }
+}
+
+.circle-shine {
+  display: inline-block;
+  position: absolute;
+  z-index: 1;
+  width: 8.5vw;
+  height: 8.5vw;
+  background-image: url(../img/icon-light-8.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  @include mobile {
+    width: 11.5vw;
+    height: 11.5vw;
+  }
+}
+.circle-shine-1 {
+  display: inline-block;
+  position: absolute;
+  z-index: 1;
+  width: 8.5vw;
+  height: 8.5vw;
+  background-image: url(../img/icon-light-8-re.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  @include mobile {
+    width: 12.5vw;
+    height: 12.5vw;
+  }
+}
+
+.vertical-shine {
+  display: inline-block;
+  position: absolute;
+  z-index: 1;
+  width: 27.45vw;
+  height: 36.15vw;
+  background-image: url(../img/vertical-shine.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.star-shine {
+  display: inline-block;
+  position: absolute;
+  z-index: 1;
+  width: 10vw;
+  height: 10vw;
+  background-image: url(../img/icon-light-1.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  animation: star-shine 2s infinite alternate;
+  animation-delay: 0.5s;
+  top: -70%;
+  left: -40%;
+  @keyframes star-shine {
+    0% {
+      transform: rotate(0deg) scale(0);
+    }
+    100% {
+      transform: rotate(360deg) scale(1.2);
+    }
+  }
+}
+@charset "UTF-8"; /*!
+ * animate.css - https://animate.style/
+ * Version - 4.1.1
+ * Licensed under the MIT license - http://opensource.org/licenses/MIT
+ *
+ * Copyright (c) 2020 Animate.css
+ */
+:root {
+  --animate-duration: 1s;
+  --animate-delay: 1s;
+  --animate-repeat: 1;
+}

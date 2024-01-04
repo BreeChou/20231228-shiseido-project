@@ -1,0 +1,67 @@
+// cut2
+.cut2 {
+  background-image: url(../img/bg-2.jpg);
+  height: 61vw;
+  position: relative;
+  @include mobile {
+    height: 70vw;
+  }
+}
+.p-t-20 {
+  padding-top: 9.38vw;
+  @include mobile {
+    padding-top: 15vw;
+  }
+}
+.shine-position {
+  top: 8%;
+  left: 23%;
+  @include mobile {
+    top: 9%;
+    left: 14%;
+  }
+}
+.shine-position-2 {
+  bottom: 11.35%;
+  left: 53%;
+  // width: 25vw;
+  @include mobile {
+    bottom: 8.5%;
+    left: 54%;
+  }
+}
+.video-board {
+  margin: 0 auto;
+  width: 70.83%;
+  position: relative;
+  .video-board-frame {
+    position: absolute;
+    top: -7.5%;
+    left: -4.5%;
+    &::after {
+      position: absolute;
+      content: "";
+      width: 77.14vw;
+      height: 46.04vw;
+      background-image: url(../img/video_frame.png);
+      background-size: cover;
+    }
+  }
+  .video-box {
+    margin: 0 auto;
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.25%;
+    & iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+  }
+  @include mobile {
+    transform: scale(1.2);
+  }
+}

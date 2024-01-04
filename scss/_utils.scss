@@ -1,0 +1,6 @@
+@mixin mobile {
+  @media (max-width: 900px) {
+    //要記得寫 @content
+    @content;
+  }
+}

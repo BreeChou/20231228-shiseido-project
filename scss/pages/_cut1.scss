@@ -1,0 +1,145 @@
+.kv {
+  background-image: url(../img/bg.jpg);
+  height: 50vw;
+  @include mobile {
+    height: 301vw;
+    background: linear-gradient(to right, #fff 50%, rgba(25, 255, 255, 0)),
+      url(../img/bg-1-m.jpg?v2), url(../img/bg.jpg),
+      linear-gradient(to right, #fff, #fefdfb, #fbf8f1, #f6f2e6);
+    background-size: 25% 160vw, 100% auto, 285% auto, 100% 80vw;
+    background-position: 0 141vw, 0 0, 52.5% 100%, 0 90vw;
+    background-repeat: no-repeat;
+    background-color: #fff;
+    border-right: 2vw solid #c30328;
+  }
+}
+
+.cut1 {
+  position: relative;
+  align-items: center;
+  @include mobile {
+    flex-direction: row;
+    justify-content: center;
+  }
+  u {
+    font-size: 1vw;
+    text-decoration: none;
+    padding-bottom: 0.2vw;
+    border-bottom: 1px solid;
+    position: absolute;
+    top: 70%;
+    right: 45%;
+    @include mobile {
+      font-size: 4vw;
+      top: 86.5%;
+      right: 37%;
+    }
+  }
+  .notion {
+    bottom: 5%;
+    right: 15.6%;
+    @include mobile {
+      bottom: 2%;
+      right: 39%;
+    }
+  }
+  
+  .text-right {
+    position: absolute;
+    right: 5%;
+    // background-color: rgb(12, 189, 77, 0.4);
+    text-align: center;
+    width: 32%;
+    @include mobile {
+      margin: 0 auto;
+      width: 80%;
+      top: 44%;
+      left: 5%;
+    }
+    h1 {
+      margin-bottom: 10%;
+      align-self: center;
+      width: 21vw;
+      height: 5vw;
+      background: url(../img/logoAndFlower.png) no-repeat center top;
+      background-size: 100%;
+      text-indent: -9999px;
+      z-index: 1;
+      @include mobile {
+        transform: scale(2.5);
+      }
+    }
+    h2 {
+      letter-spacing: 0.2vw;
+    }
+    h3 {
+      margin-top: 1vw;
+      position: relative;
+      sup {
+        position: absolute;
+        font-size: 1.5vw;
+      }
+    }
+    p {
+      border: 1px solid transparent;
+      border-width: 1px 0 1px 0;
+      border-image: linear-gradient(to right, rgba(0, 0, 0, 0), black);
+      border-image-slice: 1;
+      letter-spacing: 0.17vw;
+      padding: 0.8vw;
+      color: #000;
+      font-weight: normal;
+      position: relative;
+      line-height: 1.5;
+      margin: 1vw 0;
+      @include mobile {
+        font-weight: 500;
+        padding: 2vw;
+        letter-spacing: .5vw;
+        margin: 5vw 0;
+        font-size: 3.7vw;
+      }
+    }
+    .cta {
+      margin-top: 3vw;
+      align-items: center;
+      @include mobile {
+        justify-content: space-around;
+        width: 100%;
+        position: absolute;
+        top: 245%;
+        flex-direction: row;
+      }
+      .more {
+        margin-bottom: 1vw;
+        @include mobile {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+  .text-left {
+    position: absolute;
+    left: 4.5%;
+    bottom: 5%;
+    text-align: center;
+    @include mobile {
+      left: auto;
+      bottom: 62%;
+      text-align: left;
+    }
+    h4 {
+    }
+    h5 {
+      margin-top: 1vw;
+      font-weight: 500;
+      letter-spacing: 0.7vw;
+      font-size: 2.4vw;
+      @include mobile {
+        letter-spacing: 1.3vw;
+        margin-top: 3vw;
+        font-size: 4vw;
+      }
+    }
+  }
+}

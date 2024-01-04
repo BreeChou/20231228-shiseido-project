@@ -1,0 +1,245 @@
+// cut9
+.cut9 {
+  background-image: url(../img/bg-9.jpg);
+  height: 255vw;
+  @include mobile {
+    height: 336vw;
+    background-image: url(../img/bg-9-m.jpg);
+    // background-position: -50vw 0vw;
+    // background-size: 100%, 146vw;
+  }
+
+  .notion {
+    margin-top: 3vw;
+    font-size: 1.2vw;
+    line-height: 1.8vw;
+    @include mobile {
+      margin-top: 4vw;
+      line-height: 1.5;
+      font-size: 2.3vw;
+    }
+  }
+}
+.m-r-6 {
+  margin-right: 3vw;
+}
+.cut9 {
+  padding-top: 5vw;
+  position: relative;
+  .shine {
+    display: inline-block;
+    position: absolute;
+    z-index: 1;
+    width: 27.8vw;
+    height: 5.26vw;
+    background-image: url(../img/shine.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  .shine-1 {
+    display: inline-block;
+    position: absolute;
+    z-index: 1;
+    width: 5.66vw;
+    height: 32vw;
+    background-image: url(../img/shine-1.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  .shine-animation-2 {
+    animation: shine_shine linear 2s infinite alternate;
+    animation-delay: 1s;
+  }
+  .shine-animation {
+    animation: shine_shine linear 2s infinite alternate;
+  }
+
+  @keyframes shine_shine {
+    0% {
+      transform: scale(0);
+      // opacity: 0;
+    }
+    50% {
+      transform: scale(1);
+      // opacity: 1;
+    }
+    100% {
+      transform: scale(0);
+      // opacity: 0;
+    }
+  }
+
+  .title {
+    text-align: center;
+    h2 {
+      letter-spacing: 0.1vw;
+    }
+    p {
+      padding: 2vw 0;
+      @include mobile {
+        margin: 0 auto;
+        width: 50%;
+        line-height: 1.5;
+        font-size: 3.5vw;
+        letter-spacing: .2vw;
+        font-weight: 500;
+      }
+    }
+    .shine-position {
+      top: 3vw;
+      left: 20%;
+    }
+    .shine-position-2 {
+      top: 6vw;
+      left: 48vw;
+      @include mobile {
+        top: 16vw;
+      }
+    }
+  }
+  .sale-list-all {
+    width: 85%;
+    margin: 0 auto;
+  }
+  .sale-list {
+    .list-frame {
+      background: rgba(255, 255, 255, 0.8);
+      border: 0.15vw solid transparent;
+      border-image: linear-gradient(to right, #938264, #cbb590 100%);
+      border-image-slice: 1;
+      box-shadow: 0px 0px 10px 5px #f9f3c9;
+      // padding: 2vw;
+      align-items: center;
+      margin-top: 5vw;
+      position: relative;
+      .shine-position {
+        top: -2.4vw;
+        left: 2%;
+      }
+      .shine-position-2 {
+        top: 30.4vw;
+        left: 55vw;
+      }
+      .fz-26 {
+        @include mobile {
+          font-size: 2.8vw;
+        }
+      }
+    }
+    .img {
+      width: 50%;
+      @include mobile {
+        width: 46%;
+      }
+    }
+
+    .sale-box {
+      position: relative;
+      @include mobile {
+        padding: 3vw 0 3vw 0;
+        width: 58%;
+      }
+
+      u {
+        position: absolute;
+        text-decoration: none;
+        font-size: 1.5vw;
+        top: 5.5vw;
+        left: 0;
+        @include mobile {
+          font-size: 4vw;
+          top: 3.5vw;
+          left: -12vw;
+        }
+      }
+      .hide {
+        display: none;
+      }
+      padding: 5vw;
+      .price {
+        position: relative;
+        margin-top: 1vw;
+        margin-bottom: 2vw;
+        align-items: center;
+        padding-bottom: 2vw;
+        &::after {
+          content: "";
+          top: 3.5vw;
+          position: absolute;
+          width: 23vw;
+          border-bottom: 0.1vw solid #b3b3b3;
+        }
+        @include mobile {
+          .fz-32 {
+            font-size: 2.5vw;
+          }
+          .fz-40-1 {
+            font-size: 3.5vw;
+          }
+          .fz-22 {
+            font-size: 2.2vw;
+          }
+        }
+      }
+      width: 51%;
+      h3 {
+        font-weight: bold;
+        line-height: 1.2;
+        letter-spacing: 0.1vw;
+        @include mobile {
+          font-size: 4.3vw;
+        }
+      }
+      .desc {
+        margin-bottom: 4.5vw;
+        @include mobile {
+          margin-bottom: 1vw;
+        }
+        span {
+          width: 1.9vw;
+          height: 1.9vw;
+          font-size: 1.2vw;
+          color: #fff;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          background-color: #192384;
+          border-radius: 50vw;
+          @include mobile {
+            width: 4vw;
+            height: 4vw;
+            font-size: 3vw;
+            line-height: 3vw;
+          }
+        }
+        li {
+          width: 93%;
+          line-height: 1.4;
+          margin-bottom: 1.2vw;
+        }
+      }
+      .buy {
+        @include mobile {
+          margin-top: 2vw;
+          padding: 1.5vw 4vw;
+          font-size: 3vw;
+        }
+        span {
+          @include mobile {
+            width: 2vw;
+            height: 2vw;
+            margin-left: 2.5vw;
+          }
+        }
+      }
+    }
+    @include mobile {
+      .shine-position {
+        display: none;
+      }
+      .shine-position-2 {
+        display: none;
+      }
+    }
+  }
+}
